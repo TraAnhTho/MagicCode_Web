@@ -1,0 +1,67 @@
+/* Đặt biến phụ toàn cục*/
+:root {
+  --color_main: rgb(255, 182, 193);
+  --color_other: rgb(219, 112, 147);
+  --color_opacity: linear-gradient(
+    90deg,
+    rgba(255, 182, 193, 0.5),
+    rgba(255, 255, 255, 0.3)
+  );
+  /* --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136); */
+}
+* {
+  /* khi padding,... không bị thay đổi kích thước */
+  box-sizing: inherit;
+  font-size: medium;
+}
+html {
+  /* 1rem=10px */
+  font-size: 62.5%;
+  /* độ cao khoảng cách các dòng chữ */
+  line-height: normal;
+  /* font chữ  */
+  font-family: "Pacifico", cursive;
+  /* khi padding,... không bị thay đổi kích thước */
+  box-sizing: border-box;
+  min-width: 100%;
+}
+.title-font {
+  font-family: "Roboto", sans-serif;
+  font-weight: 40rem;
+  font-style: normal;
+  line-height: normal;
+  font-size: 8rem;
+  color: var(--color_other);
+  margin: auto;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* nền móng cho responsive */
+.gird {
+  /* nếu kichthuoc be hơn 1200px tự điều chỉnh */
+  width: 1200px;
+  max-width: 100%;
+  /* căn giữa */
+  margin: 0 auto;
+}
+.gird__full-width {
+  width: 90%;
+  margin: 0 auto;
+}
+.gird__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gird__column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
