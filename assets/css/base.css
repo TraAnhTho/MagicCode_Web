@@ -4,9 +4,10 @@
   --color_other: rgb(219, 112, 147);
   --color_opacity: linear-gradient(
     90deg,
-    rgba(255, 182, 193, 0.5),
-    rgba(255, 255, 255, 0.3)
+    rgba(255, 182, 193, 0.9),
+    rgba(255, 255, 255, 0.9)
   );
+  --color_passion: linear-gradient(90deg, #feadb9, #487ba6);
   /* --glow-color: rgb(217, 176, 255);
   --glow-spread-color: rgba(191, 123, 255, 0.781);
   --enhanced-glow-color: rgb(231, 206, 255);
@@ -60,9 +61,21 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  /* justify-content: space-around; */
+  justify-content: center;
 }
 .gird__column {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+.background--main {
+  width: 30rem;
+  height: 30rem;
+  background-color: var(--color_opacity);
+}
+.top {
+  margin: 5rem auto;
+  padding: 2rem;
+  text-align: center;
 }

@@ -15,6 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/base.css" class="" />
     <link rel="stylesheet" href="./assets/css/header.css" class="" />
+    <link rel="stylesheet" href="./assets/css/main.css" class="" />
     <link rel="stylesheet" href="./assets/css/footer.css" class="" />
     <link rel="stylesheet" href="./assets/css/hover.css" class="" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
@@ -32,70 +33,70 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./assets/img/snapedit_1716221580645.png"
-    />
+    <link rel="icon" type="image/x-icon" href="./assets/img/magiccode.png" />
     <!-- JavaScript -->
     <script
       type="text/javascript"
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="./assets/js/main.js"></script>
 
     <title>MagicCode</title>
   </head>
   <body style="">
     <div id="wrapper">
+      <!-- PHẦN NAVBAR -->
+      <nav class="navbar gird__row">
+        <ul class="navbar__item gird__row">
+          <li class="item title-font navbar__item--logo">
+            <img src="./assets/img/magiccode.png" alt="" class="logo" />
+          </li>
+          <li class="item">
+            <div class="checkbox">
+              <input class="tgl" id="toggle" type="checkbox" />
+              <label class="tgl-btn" for="toggle"> </label>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar__item gird__row">
+          <li class="item">
+            <a class="header__a__item" href="">Home</a>
+          </li>
+          <li class="item">
+            <a class="header__a__item" href="">Courses</a>
+          </li>
+          <li class="item">
+            <a class="header__a__item" href="">Form</a>
+          </li>
+          <li class="item">
+            <a class="header__a__item" href="">Other</a>
+          </li>
+          <li class="item">
+            <a class="header__a__item" href="">Other</a>
+          </li>
+        </ul>
+        <ul class="navbar__item gird__row">
+          <li class="item">
+            <i class="icon_while fa-solid fa-magnifying-glass"></i>
+          </li>
+          <li class="item">
+            <a class="head" href="">Login</a>
+          </li>
+          <li class="item">
+            <button class="Btn button">Regiter</button>
+          </li>
+        </ul>
+      </nav>
+      <!-- END NAVBAR -->
       <!-- PHẦN HEADER -->
       <header id="header">
         <div class="header__background">
           <div class="header__background--main"></div>
           <div class="header__background--content">
-            <div class="header__gird gird gird__column">
-              <!-- PHẦN NAVBAR -->
-              <nav class="navbar gird__row">
-                <ul class="navbar__item gird__row">
-                  <!-- <li class="item"><i class="icon_while icon_button fa-solid fa-bars"></i></li> -->
-                  <li class="item title-font navbar__item--logo">
-                    <img
-                      src="./assets/img/Ảnh chụp màn hình 2024-05-20 224545.png"
-                      alt=""
-                      class="logo"
-                    />
-                  </li>
-                </ul>
-                <ul class="navbar__item gird__row">
-                  <li class="item">
-                    <a class="header__a__item" href="">Home</a>
-                  </li>
-                  <li class="item">
-                    <a class="header__a__item" href="">Courses</a>
-                  </li>
-                  <li class="item">
-                    <a class="header__a__item" href="">Form</a>
-                  </li>
-                  <li class="item">
-                    <a class="header__a__item" href="">Other</a>
-                  </li>
-                  <li class="item">
-                    <a class="header__a__item" href="">Other</a>
-                  </li>
-                </ul>
-                <ul class="navbar__item gird__row">
-                  <li class="item">
-                    <i class="icon_while fa-solid fa-magnifying-glass"></i>
-                  </li>
-                  <li class="item">
-                    <a class="head" href="">Login</a>
-                  </li>
-                  <li class="item">
-                    <button class="Btn button">Regiter</button>
-                  </li>
-                </ul>
-              </nav>
-              <!-- END NAVBAR -->
+            <div class="header__gird gird gird__row">
+              <div class="header__background--root"></div>
+
               <div class="header__title title-font">
                 <p class="header__title title-font">
                   Knowledge will bring <br />
@@ -110,28 +111,156 @@
                   </p>
                 </div>
               </div>
-              <div class="header__box-img header__box-img--up gird__row">
-                <div class="box-img--circle box-img--circle--java"></div>
-                <div class="box-img--circle box-img--circle--c"></div>
-                <div class="box-img--circle box-img--circle--php"></div>
-                <div class="box-img--circle box-img--circle--cc"></div>
-              </div>
-              <div class="header__box-img header__box-img--down gird__row">
-                <div class="box-img--circle box-img--circle--ai"></div>
-                <div class="box-img--circle box-img--circle--html"></div>
-                <div class="box-img--circle box-img--circle--python"></div>
-                <div class="box-img--circle box-img--circle--chat"></div>
-              </div>
             </div>
           </div>
-          <div class="header__background--root"></div>
         </div>
       </header>
       <!-- END PHẦN HEADER -->
       <div id="main-content">
-        <div class="main-one--bieudo">
-          <div id="piechart" style="width: 900px; height: 500px"></div>
+        <!-- Phần Main1 -->
+        <div class="top">
+          <h1 class="title-font">01. vchvsdh</h1>
         </div>
+        <div class="main-one--bieudo gird gird__row">
+          <div
+            id="piechart"
+            class="main-one--circle"
+            style="width: 500px; height: 500px"
+          ></div>
+          <div class="main-one--vanban"></div>
+        </div>
+
+        <!-- maintwo -->
+        <div class="top">
+          <h1 class="title-font">02. vchvsdh</h1>
+        </div>
+        <div class="main-two--boxtext gird gird__row">
+          <div class="boxtext">
+            <div class="book">
+              <p class="text">
+                Java is a popular programming language. Java is used to develop
+                mobile apps, web apps,desktop apps, games and much more.
+              </p>
+              <div class="cover">
+                <p>JAVA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxtext">
+            <div class="book">
+              <p class="text">
+                HTML is the standard markup language for Web pages. With HTML
+                you can create your own Website. HTML is easy to learn - You
+                will enjoy it!
+              </p>
+              <div class="cover">
+                <p>HTML</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxtext">
+            <div class="book">
+              <p class="text">
+                PHP is a server scripting language, and a powerful tool for
+                making dynamic and interactive Web pages. PHP is a widely-used,
+                free, and efficient alternative to competitors.
+              </p>
+              <div class="cover">
+                <p>PHP</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxtext">
+            <div class="book">
+              <p class="text">
+                Python is a popular programming language. Python can be used on
+                a server to create web applications.
+              </p>
+              <div class="cover">
+                <p>PYTHON</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxtext">
+            <div class="book">
+              <p class="text">
+                C++ is a popular programming language. C++ is used to create
+                computer programs, and is one of the most used language in game
+                development.
+              </p>
+              <div class="cover">
+                <p>C++</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxtext">
+            <div class="book">
+              <p class="text">
+                JavaScript is the world's most popular programming language.
+                JavaScript is the programming language of the Web. JavaScript is
+                easy to learn. This tutorial will teach you JavaScript from
+                basic to advanced.
+              </p>
+              <div class="cover">
+                <p>JAVASCRIPT</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxtext">
+            <div class="book">
+              <p class="text">
+                C# (C-Sharp) is a programming language developed by Microsoft
+                that runs on the .NET Framework. C# is used to develop web apps,
+                desktop apps, mobile apps, games and much more.
+              </p>
+              <div class="cover">
+                <p>C#</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxtext">
+            <div class="book">
+              <p class="text">
+                MySQL is a widely used relational database management system
+                (RDBMS). MySQL is free and open-source. MySQL is ideal for both
+                small and large applications.
+              </p>
+              <div class="cover">
+                <p>MYSQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MainThree -->
+        <div class="top">
+          <h1 class="title-font">03. vchvsdh</h1>
+        </div>
+        <div class="main-three background-main">
+          <section class="main-three--information gird gird__row">
+            <section class="information infomation--left gird__column">
+              <div class="infomation--left--box"></div>
+              <div class="infomation--left--box"></div>
+              <div class="infomation--left--box"></div>
+              <div class="infomation--left--box"></div>
+              <div class="infomation--left--box"></div>
+            </section>
+            <section
+              class="information infomation--right gird__column"
+            ></section>
+          </section>
+        </div>
+
+        <!-- MainFour -->
+
+        <!-- MainFive -->
       </div>
       <footer id="footer"></footer>
     </div>
