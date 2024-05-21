@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./assets/css/header.css" class="" />
     <link rel="stylesheet" href="./assets/css/footer.css" class="" />
     <link rel="stylesheet" href="./assets/css/hover.css" class="" />
-
     <link rel="stylesheet" href="./assets/css/responsive.css" />
     <!-- BOOTSTRAP -->
     <!-- <link
@@ -33,20 +32,39 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <title>CoDe CoUsE</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/snapedit_1716221580645.png"
+    />
+    <!-- JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+
+    <title>MagicCode</title>
   </head>
   <body style="">
     <div id="wrapper">
       <!-- PHẦN HEADER -->
       <header id="header">
         <div class="header__background">
-          <div class="header__background--main">
+          <div class="header__background--main"></div>
+          <div class="header__background--content">
             <div class="header__gird gird gird__column">
               <!-- PHẦN NAVBAR -->
               <nav class="navbar gird__row">
                 <ul class="navbar__item gird__row">
                   <!-- <li class="item"><i class="icon_while icon_button fa-solid fa-bars"></i></li> -->
-                  <li class="item title-font"><b>SOROKU</b></li>
+                  <li class="item title-font navbar__item--logo">
+                    <img
+                      src="./assets/img/Ảnh chụp màn hình 2024-05-20 224545.png"
+                      alt=""
+                      class="logo"
+                    />
+                  </li>
                 </ul>
                 <ul class="navbar__item gird__row">
                   <li class="item">
@@ -78,28 +96,43 @@
                 </ul>
               </nav>
               <!-- END NAVBAR -->
-              <div class="title title-font">
-                <p class="title title-font">
-                  Chào mừng bạn<br />
-                  đến với khóa học lập trình
+              <div class="header__title title-font">
+                <p class="header__title title-font">
+                  Knowledge will bring <br />
+                  you the chance to shine.
                 </p>
-                <div class="title title--span">
+                <div class="header__title title--span">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Porro explicabo officiis eius tempora maxime ut quae
-                    consectetur quam odio soluta earum rerum qui facere impedit,
-                    reprehenderit molestiae, ab consequatur tenetur.
+                    There is no end to schooling. It is not that you pass a
+                    contest, read a book or finish the semester. The whole of
+                    life, from the second you are born to the second you die, is
+                    a process of studying.
                   </p>
                 </div>
               </div>
-              <div class=""></div>
+              <div class="header__box-img header__box-img--up gird__row">
+                <div class="box-img--circle box-img--circle--java"></div>
+                <div class="box-img--circle box-img--circle--c"></div>
+                <div class="box-img--circle box-img--circle--php"></div>
+                <div class="box-img--circle box-img--circle--cc"></div>
+              </div>
+              <div class="header__box-img header__box-img--down gird__row">
+                <div class="box-img--circle box-img--circle--ai"></div>
+                <div class="box-img--circle box-img--circle--html"></div>
+                <div class="box-img--circle box-img--circle--python"></div>
+                <div class="box-img--circle box-img--circle--chat"></div>
+              </div>
             </div>
           </div>
           <div class="header__background--root"></div>
         </div>
       </header>
       <!-- END PHẦN HEADER -->
-      <div id="main-content"></div>
+      <div id="main-content">
+        <div class="main-one--bieudo">
+          <div id="piechart" style="width: 900px; height: 500px"></div>
+        </div>
+      </div>
       <footer id="footer"></footer>
     </div>
   </body>
