@@ -6,15 +6,10 @@
 }
 .header__background {
   position: relative;
-  /* min-width: fit-content; */
-  /* min-height: 70rem; */
 }
 .header__background--main {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: 40rem;
   opacity: 0.5;
   image-rendering: pixelated;
   background: url(/assets/img/nenpink.jpg) no-repeat center/cover;
@@ -27,11 +22,11 @@
   image-rendering: pixelated;
   background-size: 20rem;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   position: absolute;
-  top: 3rem;
+  top: 9rem;
   left: 1rem;
-  width: 30%;
+  width: 100%;
   height: 100%;
 }
 .navbar {
@@ -56,14 +51,14 @@
 }
 .header__title {
   text-align: center;
-  margin: auto 15rem;
+  margin: auto 5rem auto 10rem;
 }
 .header__gird {
-  /* margin: 0rem 5rem 2rem 50rem; */
   justify-content: space-between;
 }
 .title--span {
   text-align: center;
+  margin: auto 8rem auto 16rem;
 }
 .item {
   margin: auto 2rem;

@@ -1,196 +1,21 @@
-/* .Btn::before {
-  width: 70%;
-  height: 2px;
-  position: absolute;
-  background-color: rgba(250, 250, 250, 0.678);
-  content: "";
-  filter: blur(1px);
-  top: 7px;
-  border-radius: 50%;
-}
-
-.Btn::after {
-  width: 70%;
-  height: 2px;
-  position: absolute;
-  background-color: rgba(250, 250, 250, 0.137);
-  content: "";
-  filter: blur(1px);
-  bottom: 7px;
-  border-radius: 50%;
-}
-.Btn {
-  position: relative;
-  width: 150px;
-  height: 55px;
-  border-radius: 45px;
-  border: none;
-  background-color: rgb(151, 95, 255);
-  color: white;
-  box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
-  0px 5px 10px rgba(5, 5, 5, 0.212),
-  0px -10px 10px rgb(124, 54, 255) inset;
+.button {
+  color: var(--color_other);
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.Btn:hover {
-  animation: jello-horizontal 0.9s both;
-}
-
-@keyframes jello-horizontal {
-  0% {
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-} */
-
-/* --------------------- */
-
-/* button {
-  --glow-color: rgb(217, 176, 255);
-  --glow-spread-color: rgba(191, 123, 255, 0.781);
-  --enhanced-glow-color: rgb(231, 206, 255);
-  --btn-color: rgb(100, 61, 136);
-  border: 0.25em solid var(--glow-color);
-  padding: 1em 3em;
-  color: var(--glow-color);
-  font-size: 15px;
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
-  outline: none;
-  -webkit-box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
-  box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
-  text-shadow: 0 0 0.5em var(--glow-color);
-  position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  border: 0px;
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: var(--color_main_opacity);
+  transition: 0.2s;
 }
 
-button::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: 120%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  -webkit-filter: blur(2em);
-  filter: blur(2em);
-  opacity: 0.7;
-  -webkit-transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+.button:hover {
+  color: black;
+  transform: translate(-0.25rem, -0.25rem);
+  background: var(--color_main);
+  box-shadow: 0.25rem 0.25rem var(--color_main_opacity);
 }
 
-button:hover {
-  color: var(--btn-color);
-  background-color: var(--glow-color);
-  -webkit-box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 2em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
-  box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 2em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
 }
-
-button:active {
-  -webkit-box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-    0 0 2.5em 2em var(--glow-spread-color),
-    inset 0 0 0.5em 0.25em var(--glow-color);
-  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-    0 0 2.5em 2em var(--glow-spread-color),
-    inset 0 0 0.5em 0.25em var(--glow-color);
-} */
-
-/* ------------ */
-
-/* button {
-  --glow-color: rgb(217, 176, 255);
-  --glow-spread-color: rgba(191, 123, 255, 0.781);
-  --enhanced-glow-color: rgb(231, 206, 255);
-  --btn-color: rgb(100, 61, 136);
-  border: 0.25em solid var(--glow-color);
-  padding: 1em 3em;
-  color: var(--glow-color);
-  font-size: 15px;
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
-  outline: none;
-  -webkit-box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
-  box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
-  text-shadow: 0 0 0.5em var(--glow-color);
-  position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-button::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: 120%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  -webkit-filter: blur(2em);
-  filter: blur(2em);
-  opacity: 0.7;
-  -webkit-transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-}
-
-button:hover {
-  color: var(--btn-color);
-  background-color: var(--glow-color);
-  -webkit-box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 2em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
-  box-shadow: 0 0 1em 0.25em var(--glow-color),
-    0 0 4em 2em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
-}
-
-button:active {
-  -webkit-box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-    0 0 2.5em 2em var(--glow-spread-color),
-    inset 0 0 0.5em 0.25em var(--glow-color);
-  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-    0 0 2.5em 2em var(--glow-spread-color),
-    inset 0 0 0.5em 0.25em var(--glow-color);
-} */
