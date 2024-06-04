@@ -1,22 +1,19 @@
 .button {
-    color: var($color_other);
-    cursor: pointer;
-    border: 0px;
-    border-radius: 4px;
-    padding: 0.8em 2em;
-    background: var($color_main_opacity);
-    transition: 0.2s;
-  }
-  
-  .button:hover {
-    color: black;
-    transform: translate(-0.25rem, -0.25rem);
-    background: var($color_main);
-    box-shadow: 0.25rem 0.25rem var($color_main_opacity);
-  }
-  
-  .button:active {
-    transform: translate(0);
-    box-shadow: none;
-  }
-  
+  color: $color_other;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  padding: 0.8em 2em;
+  background: $color_main_opacity;
+  transition: 0.2s;
+}
+.button:hover {
+  color: black;
+  transform: translate(-0.25rem, -0.25rem);
+  background: $color_main;
+  box-shadow: 0.25rem 0.25rem $color_main_opacity;
+}
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
+}

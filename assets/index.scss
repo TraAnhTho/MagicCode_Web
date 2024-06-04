@@ -1,9 +1,9 @@
 /* Đặt biến phụ toàn cục*/
-@import 'variables';
-@import 'header';
-@import 'base';
-@import 'other';
-
+@import "variables";
+@import "base";
+@import "header";
+@import "other";
+@import "footer";
 #wrapper {
   display: inline-block;
   position: relative;
@@ -22,7 +22,7 @@
   border-radius: 10px;
   width: 25rem;
   height: 30rem;
-  background-color: var($color_pasion);
+  background-color: $color_passion;
   -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
   align-items: center;
@@ -34,7 +34,7 @@
 .cover {
   top: 0;
   position: absolute;
-  background-color: var($color_main);
+  background-color: $color_main;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -62,9 +62,9 @@
 }
 
 .checkbox {
-  --blue: var($color_main);
-  --g08: #e1e5eb;
-  --g04: #848ea1;
+  $blue: $color_main;
+  $g08: #e1e5eb;
+  $g04: #848ea1;
 }
 
 .checkbox .tgl {
@@ -108,7 +108,7 @@
 }
 .checkbox .tgl + .tgl-btn:after {
   border-radius: 2rem;
-  background: var($color_main);
+  background: $color_main;
   transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     padding 0.3s ease, margin 0.3s ease;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -120,7 +120,7 @@
   transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .checkbox .tgl:checked + .tgl-btn {
-  background: var($color_main);
+  background: $color_main;
 }
 .checkbox .tgl:checked + .tgl-btn:before {
   content: "VI";

@@ -1,4 +1,4 @@
-alert("Chào mừng bạn đến Magic Code");
+// alert("Chào mừng bạn đến Magic Code");
 
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
