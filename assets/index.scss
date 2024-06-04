@@ -2,12 +2,31 @@
 @import "variables";
 @import "base";
 @import "header";
+@import "main-four";
 @import "other";
 @import "footer";
 #wrapper {
   display: inline-block;
   position: relative;
 }
+.under-header--border {
+  background-color: $color-gray-200;
+  border: 1 solid $color-gray-200;
+  border-radius: 1rem;
+  height: 20rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  text-align: center;
+}
+.header__icon {
+  justify-content: space-around;
+  display: flex;
+  .icon--code {
+    font-size: 5rem;
+    padding: 2rem;
+  }
+}
+
 .main-one--vanban,
 .main-one--circle {
   width: 45%;
@@ -50,10 +69,13 @@
   transition: all 0.5s;
   transform: rotatey(-80deg);
 }
-.text {
-  text-align: right;
-  margin: 2rem 2rem 2rem 4rem;
+.book {
+  .text {
+    text-align: right;
+    margin: 2rem 2rem 2rem 4rem;
+  }
 }
+
 .main-two--boxtext {
   justify-content: space-between;
 }

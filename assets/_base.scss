@@ -68,6 +68,16 @@ a {
   padding: 2rem;
   text-align: center;
 }
+.text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.icon_main {
+  color: $color_other;
+}
 .button {
   color: $color_other;
   cursor: pointer;
@@ -77,15 +87,13 @@ a {
   background: $color_main_opacity;
   transition: 0.2s;
 }
-
 .button:hover {
-  color: black;
+  color: #ffff;
   transform: translate(-0.25rem, -0.25rem);
   background: $color_main;
   box-shadow: 0.25rem 0.25rem $color_main_opacity;
 }
-
 .button:active {
-  transform: translate(0);
+  transform: translate(0.2);
   box-shadow: none;
 }

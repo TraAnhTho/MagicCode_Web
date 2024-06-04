@@ -22,8 +22,9 @@
     background-repeat: no-repeat;
     background-position: left;
     position: absolute;
-    top: 9rem;
-    left: 1rem;
+    top: 0rem;
+    left: 0rem;
+    margin: 9.4rem 5rem 0rem;
     width: 100%;
     height: 100%;
   }
@@ -43,13 +44,17 @@
   .navbar__item {
     height: 100%;
     margin: 0 auto;
+    .header__a__item{
+      color: $color_other;
+
+    }
   }
   .navbar__item--logo {
     margin: o auto;
   }
   .header__title {
     text-align: center;
-    margin: auto 5rem auto 10rem;
+    margin: auto 0rem auto 10rem;
   }
   .header__gird {
     justify-content: space-between;

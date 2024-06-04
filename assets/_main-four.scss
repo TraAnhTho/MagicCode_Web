@@ -1,0 +1,56 @@
+.content--four {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+.box {
+  flex: 1;
+  margin: 1rem;
+  text-align: left;
+}
+.students {
+  margin-bottom: 0%;
+}
+.moves--ten {
+  justify-content: left;
+}
+.left--ten,
+.right--ten {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid #f77e23;
+  background-color: var(--color_while);
+  margin: 1rem;
+}
+.shadow {
+  height: 30rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.aqua {
+  display: flex;
+  margin: 2rem;
+}
+.aqua_label--label {
+  margin: 0 1rem;
+  text-align: left;
+}
+.aqua_img--one {
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+  background-position: right;
+
+  background-image: url(/assets/img/bucgiang.jpg);
+  border-radius: 50%;
+}
+.aqua_img--two {
+  width: 5rem;
+  height: 5rem;
+  background-size: cover;
+  background-image: url(/assets/img/anhanhtho.png);
+  border-radius: 50%;
+}
