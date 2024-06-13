@@ -5,9 +5,12 @@
 @import "main-four";
 @import "other";
 @import "footer";
+@import "form";
+@import "responsive";
 #wrapper {
   display: inline-block;
   position: relative;
+  width: 100%;
 }
 .under-header--border {
   background-color: $color-gray-200;

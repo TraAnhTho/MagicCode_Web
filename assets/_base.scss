@@ -21,7 +21,6 @@ html {
   font-family: "Pacifico", cursive;
   /* khi padding,... không bị thay đổi kích thước */
   box-sizing: border-box;
-  min-width: 100%;
 }
 .title-font {
   font-family: "Roboto", sans-serif;
@@ -77,6 +76,7 @@ a {
 
 .icon_main {
   color: $color_other;
+  margin: auto 2rem auto 0px;
 }
 .button {
   color: $color_other;

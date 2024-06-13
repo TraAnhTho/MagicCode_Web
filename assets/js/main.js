@@ -2,6 +2,7 @@
 
 google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
+google.charts.setOnLoadCallback(barChart);
 
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
@@ -17,7 +18,7 @@ function drawChart() {
   ]);
 
   var options = {
-    title: "Language Use",
+    title: "Commonly Used Language",
     legend: "none",
     pieSliceText: "label",
     slices: {
@@ -35,4 +36,36 @@ function drawChart() {
     document.getElementById("piechart")
   );
   chart.draw(data, options);
+}
+
+function barChart() {
+  var xValues = [
+    "AI Engineer",
+    "Network security",
+    "Software engineer",
+    "Application development",
+    "Cloud architecture",
+  ];
+  var yValues = [100, 80, 60, 40, 20, 0];
+  var barColors = ["#E17E76", "#9799BA", "#FEADB9", "#F3DDB3", "#F9E1E0"];
+
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [
+        {
+          backgroundColor: barColors,
+          data: yValues,
+        },
+      ],
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "Positions With Staff Shortages",
+      },
+    },
+  });
 }
