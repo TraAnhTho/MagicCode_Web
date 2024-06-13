@@ -22,6 +22,9 @@ html {
   /* khi padding,... không bị thay đổi kích thước */
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
 .title-font {
   font-family: "Roboto", sans-serif;
   font-weight: 40rem;
