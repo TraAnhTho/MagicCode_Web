@@ -18,7 +18,7 @@ function drawChart() {
   ]);
 
   var options = {
-    title: "Commonly Used Language",
+    title: "Ngôn Ngữ Lập Trình Phổ Biến",
     legend: "none",
     pieSliceText: "label",
     slices: {
@@ -30,7 +30,15 @@ function drawChart() {
       5: { color: "#F3DDB3" }, // HTML
       6: { color: "#487ba6", offset: 0.2 }, // JS
       7: { color: "#E17E76" }, // Other
-    },
+    }, pieStartAngle: 15, // Xoay biểu đồ để các lát cắt không nằm ngay dưới tiêu đề
+    chartArea: {
+      top: 60, // khoảng cách từ đỉnh của chartArea đến đỉnh của biểu đồ
+      left: 50,
+      right: 50,
+      bottom: 50,
+      width: '100%',
+      height: '75%'
+    }
   };
   var chart = new google.visualization.PieChart(
     document.getElementById("piechart")
@@ -64,8 +72,56 @@ function barChart() {
       legend: { display: false },
       title: {
         display: true,
-        text: "Positions With Staff Shortages",
+        text: "Những Vị Trí Đang Và Sẽ Thiếu Nhân Sự Trong Tương Lai",
       },
     },
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loginLink = document.querySelector(".login-link");
+  const registerButton = document.querySelector(".register-button");
+  const modal = document.querySelector(".modal");
+
+  loginLink.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+
+  registerButton.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const registerButton = document.querySelector(".button"); // Chọn button Register
+  const loginLink = document.querySelector(".head"); // Chọn link Login
+
+  const modal = document.getElementById("modal"); // Chọn modal
+
+  // Khi nhấn vào Register
+  registerButton.addEventListener("click", function () {
+    modal.style.display = "block"; // Hiển thị modal
+  });
+
+  // Khi nhấn vào Login
+  loginLink.addEventListener("click", function (event) {
+    event.preventDefault(); // Ngăn chặn chuyển hướng đến href của thẻ <a>
+    modal.style.display = "block"; // Hiển thị modal
+  });
+
+  // Đóng modal khi nhấn vào overlay
+  modal.addEventListener("click", function (event) {
+    if (
+      event.target === modal ||
+      event.target.classList.contains("modal__overlay")
+    ) {
+      modal.style.display = "none"; // Đóng modal
+    }
+  });
+});

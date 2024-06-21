@@ -13,7 +13,7 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/base.css" class="" />
-    <link rel="stylesheet" href="./assets/index.css" class="" />
+    <link rel="stylesheet" href="./assets/css/index.css" class="" />
 
     <!-- BOOTSTRAP -->
     <!-- <link
@@ -55,21 +55,21 @@
             </div>
           </li>
         </ul>
-        <ul class="navbar__item gird__row">
+        <ul class="navbar__item navbar__menu gird__row">
           <li class="item">
-            <a class="header__a__item" href="">Home</a>
+            <a class="header__a__item" href="#">Trang Chủ</a>
           </li>
           <li class="item">
-            <a class="header__a__item" href="">Courses</a>
+            <a class="header__a__item" href="courses.html">Khóa Học</a>
           </li>
           <li class="item">
-            <a class="header__a__item" href="">Form</a>
+            <a class="header__a__item" href="blog.html">Bài Viết</a>
           </li>
           <li class="item">
-            <a class="header__a__item" href="">Other</a>
+            <a class="header__a__item" href="#part4">Đánh Giá</a>
           </li>
           <li class="item">
-            <a class="header__a__item" href="">Other</a>
+            <a class="header__a__item" href="contact.html">Liên Hệ</a>
           </li>
         </ul>
         <ul class="navbar__item gird__row">
@@ -77,12 +77,15 @@
             <i class="icon_main fa-solid fa-magnifying-glass"></i>
           </li>
           <li class="item">
-            <a class="head header__a__item" href="">Login</a>
+            <a class="head header__a__item" href="">Đăng Nhập</a>
           </li>
           <li class="item">
-            <button class="button">Register</button>
+            <button class="button">Đăng Kí</button>
           </li>
         </ul>
+        <div class="navbar__item gird__row navbar__hamburger">
+          <img src="./assets/img/menu.svg" />
+        </div>
       </nav>
       <!-- END NAVBAR -->
       <!-- PHẦN HEADER -->
@@ -94,19 +97,21 @@
               <div class="header__background--root">
                 <div class="header__title title-font">
                   <p class="header__title title-font">
-                    Knowledge will bring <br />
-                    you the chance to shine.
+                    Kiến thức sẽ mang đến cho
+                    <br />
+                    bạn cơ hội tỏa sáng.
                   </p>
                   <div class="header__title title--span">
                     <p class="text">
-                      There is no end to schooling. It is not that you pass a
-                      contest, read a book or finish the semester. The whole of
-                      life, from the second you are born to the second you die,
-                      is a process of studying.
+                      Không có sự kết thúc nào cho việc học tập. Đó không chỉ là
+                      bạn vượt qua được cuộc thi, được một cuốn sách hay kết
+                      thúc kỳ học. Toàn bộ cuộc sống ngay từ giây phút bạn sinh
+                      ra cho đến giây phút bạn chết đi, đều là một quá trình học
+                      tập.
                     </p>
                   </div>
                   <div class="header__title">
-                    <button class="button">Start</button>
+                    <button class="button">Bắt Đầu</button>
                   </div>
                 </div>
               </div>
@@ -119,8 +124,8 @@
         <div class="gird">
           <div class="under-header--border">
             <p>
-              There are more than 700 programming languages ​​in the world today
-              and there may be more in the future.
+              Có hơn 700 ngôn ngữ lập trình trên thế giới hiện nay và có thể còn
+              nhiều hơn nữa trong tương lai.
             </p>
             <div class="header__icon">
               <i class="icon--code fa-brands fa-java"></i>
@@ -137,8 +142,8 @@
       </div>
       <div id="main-content">
         <!-- Phần Main1 -->
-        <div class="top">
-          <h1 class="title-font">01. Statistics</h1>
+        <div id="part1" class="top">
+          <h1 class="title-font">01. Thống Kê</h1>
         </div>
         <div class="main-one--bieudo gird gird__row">
           <div
@@ -158,15 +163,16 @@
         </div>
 
         <!-- maintwo -->
-        <div class="top">
-          <h1 class="title-font">02. Basic knowledge</h1>
+        <div id="part2" class="top">
+          <h1 class="title-font">02. Có Thể Bạn Chưa Biết</h1>
         </div>
         <div class="main-two--boxtext gird gird__row">
           <div class="boxtext">
             <div class="book">
               <p class="text">
-                Java is a popular programming language. Java is used to develop
-                mobile apps, web apps,desktop apps, games and much more.
+                Java là một ngôn ngữ lập trình phổ biến. Java được sử dụng để
+                phát triển ứng dụng di động, ứng dụng web, ứng dụng máy tính để
+                bàn, trò chơi và nhiều hơn nữa.
               </p>
               <div class="cover">
                 <p>JAVA</p>
@@ -267,81 +273,218 @@
         </div>
 
         <!-- MainThree -->
-        <div class="top">
-          <h1 class="title-font">03. vchvsdh</h1>
+        <div id="part3" class="top">
+          <h1 class="title-font">03. Các Khóa Học Phổ Biến</h1>
         </div>
-        <div class="main-three--courses grid flex-row">
+        <div class="main-three--courses gird gird__row flex-row">
           <div class="courses-item">
+            <a href="course.html"
+              ><img src="./assets/img/C.png" alt="" class="img"
+            /></a>
+            <table class="course-table-item">
+              <tr class="course-tr-item">
+                <td class="course-td-item" colspan="2">
+                  Learn Marketing from <br />Top Instructors.
+                </td>
+                <td colspan="2">
+                  <i class="icon_main star-people fa-regular fa-star"></i>4.5
+                </td>
+              </tr>
+              <tr class="course-tr-item">
+                <td><span>2 Tháng</span></td>
+                <td>
+                  <span
+                    ><i class="icon_main fa-solid fa-user"></i>1.5k Học
+                    Viên</span
+                  >
+                </td>
+                <td class="course-money-item"><b>30.5$</b></td>
+              </tr>
+            </table>
+          </div>
+          <!-- <div class="courses-item">
             <a href=""><img src="./assets/img/C.png" alt="" class="img" /></a>
-            <h2 class="title-font">C++ Basic</h2>
+            <h4 class="title-font">C++ Basic</h4>
             <p class="main-three--courses-item-text">
               A <a href="">Beginner's</a> course for those who want to start
               with C++
             </p>
-          </div>
+          </div> -->
           <div class="courses-item">
             <a href=""><img src="./assets/img/js.png" alt="" class="img" /></a>
-            <h2 class="title-font">Javascript Basic</h2>
-            <p class="main-three--courses-item-text">
-              A <a href="">Beginner's</a> course for those who want to start
-              with JavaScript
-            </p>
+            <table class="course-table-item">
+              <tr class="course-tr-item">
+                <td class="course-td-item" colspan="2">
+                  Learn Marketing from <br />Top Instructors.
+                </td>
+                <td colspan="2">
+                  <i class="icon_main star-people fa-regular fa-star"></i>4.5
+                </td>
+              </tr>
+              <tr class="course-tr-item">
+                <td><span>2 Tháng</span></td>
+                <td>
+                  <span
+                    ><i class="icon_main fa-solid fa-user"></i>1.5k Học
+                    Viên</span
+                  >
+                </td>
+                <td class="course-money-item"><b>30.5$</b></td>
+              </tr>
+            </table>
           </div>
           <div class="courses-item">
             <a href=""
               ><img src="./assets/img/java.png" alt="" class="img"
             /></a>
-            <h2 class="title-font">Java Basic</h2>
-            <p class="main-three--courses-item-text">
-              A <a href="">Beginner's</a> course for those who want to start
-              with Java
-            </p>
+            <table class="course-table-item">
+              <tr class="course-tr-item">
+                <td class="course-td-item" colspan="2">
+                  Learn Marketing from <br />Top Instructors.
+                </td>
+                <td colspan="2">
+                  <i class="icon_main star-people fa-regular fa-star"></i>4.5
+                </td>
+              </tr>
+              <tr class="course-tr-item">
+                <td><span>2 Tháng</span></td>
+                <td>
+                  <span
+                    ><i class="icon_main fa-solid fa-user"></i>1.5k Học
+                    Viên</span
+                  >
+                </td>
+                <td class="course-money-item"><b>30.5$</b></td>
+              </tr>
+            </table>
           </div>
           <div class="courses-item">
             <a href=""
               ><img src="./assets/img/html.png" alt="" class="img"
             /></a>
-            <h2 class="title-font">HTML Basic</h2>
-            <p class="main-three--courses-item-text">
-              A <a href="">Beginner's</a> course for those who want to start
-              with HTML
-            </p>
+            <table class="course-table-item">
+              <tr class="course-tr-item">
+                <td class="course-td-item" colspan="2">
+                  Learn Marketing from <br />Top Instructors.
+                </td>
+                <td colspan="2">
+                  <i class="icon_main star-people fa-regular fa-star"></i>4.5
+                </td>
+              </tr>
+              <tr class="course-tr-item">
+                <td><span>2 Tháng</span></td>
+                <td>
+                  <span
+                    ><i class="icon_main fa-solid fa-user"></i>1.5k Học
+                    Viên</span
+                  >
+                </td>
+                <td class="course-money-item"><b>30.5$</b></td>
+              </tr>
+            </table>
           </div>
           <div class="courses-item">
             <a href=""><img src="./assets/img/php.png" alt="" class="img" /></a>
-            <h2 class="title-font">PHP Basic</h2>
-            <p class="main-three--courses-item-text">
-              A <a href="">Beginner's</a> course for those who want to start
-              with PHP
-            </p>
+            <table class="course-table-item">
+              <tr class="course-tr-item">
+                <td class="course-td-item" colspan="2">
+                  Learn Marketing from <br />Top Instructors.
+                </td>
+                <td colspan="2">
+                  <i class="icon_main star-people fa-regular fa-star"></i>4.5
+                </td>
+              </tr>
+              <tr class="course-tr-item">
+                <td><span>2 Tháng</span></td>
+                <td>
+                  <span
+                    ><i class="icon_main fa-solid fa-user"></i>1.5k Học
+                    Viên</span
+                  >
+                </td>
+                <td class="course-money-item"><b>30.5$</b></td>
+              </tr>
+            </table>
           </div>
           <div class="courses-item">
             <a href=""
-              ><img src="./assets/img/react.png" alt="" class="img"
+              ><img src="./assets/img/ReactJS.png" alt="" class="img"
             /></a>
-            <h2 class="title-font">ReactJS Basic</h2>
-            <p class="main-three--courses-item-text">
-              A <a href="">Beginner's</a> course for those who want to start
-              with ReactJS
-            </p>
+            <table class="course-table-item">
+              <tr class="course-tr-item">
+                <td class="course-td-item" colspan="2">
+                  Learn Marketing from <br />Top Instructors.
+                </td>
+                <td colspan="2">
+                  <i class="icon_main star-people fa-regular fa-star"></i>4.5
+                </td>
+              </tr>
+              <tr class="course-tr-item">
+                <td><span>2 Tháng</span></td>
+                <td>
+                  <span
+                    ><i class="icon_main fa-solid fa-user"></i>1.5k Học
+                    Viên</span
+                  >
+                </td>
+                <td class="course-money-item"><b>30.5$</b></td>
+              </tr>
+            </table>
           </div>
           <div class="courses-item">
             <a href=""><img src="./assets/img/aws.png" alt="" class="img" /></a>
-            <h2 class="title-font">AWS Basic</h2>
-            <p class="main-three--courses-item-text">
-              A <a href="">Beginner's</a> course for those who want to start
-              with AWS
-            </p>
+            <table class="course-table-item">
+              <tr class="course-tr-item">
+                <td class="course-td-item" colspan="2">
+                  A <a href="">Beginner's</a> course for those who want to start
+                  with SASS
+                </td>
+                <td colspan="2">
+                  <i class="icon_main star-people fa-regular fa-star"></i>4.5
+                </td>
+              </tr>
+              <tr class="course-tr-item">
+                <td><span>2 Tháng</span></td>
+                <td>
+                  <span
+                    ><i class="icon_main fa-solid fa-user"></i>1.5k Học
+                    Viên</span
+                  >
+                </td>
+                <td class="course-money-item"><b>30.5$</b></td>
+              </tr>
+            </table>
           </div>
           <div class="courses-item">
             <a href=""
-              ><img src="./assets/img/sass.png" alt="" class="img"
+              ><img src="./assets/img/sacc.png" alt="" class="img"
             /></a>
-            <h2 class="title-font">SASS Basic</h2>
-            <p class="main-three--courses-item-text">
-              A <a href="">Beginner's</a> course for those who want to start
-              with SASS
-            </p>
+            <table class="course-table-item">
+              <tr class="course-tr-item">
+                <td class="course-td-item" colspan="2">
+                  A <a href="">Beginner's</a> course for those who want to start
+                  with SASS
+                </td>
+                <td colspan="2">
+                  <i class="icon_main star-people fa-regular fa-star"></i>4.5
+                </td>
+              </tr>
+              <tr class="course-tr-item">
+                <td><span>2 Tháng</span></td>
+                <td>
+                  <span
+                    ><i class="icon_main fa-solid fa-user"></i>1.5k Học
+                    Viên</span
+                  >
+                </td>
+                <td class="course-money-item"><b>30.5$</b></td>
+              </tr>
+            </table>
+          </div>
+          <div class="courses-item courses-button">
+            <button class="courses-button__circle">
+              <i class="icon_main icon_button fa-solid fa-chevron-right"></i>
+            </button>
           </div>
         </div>
         <!-- <div class="main-three background-main">
@@ -385,14 +528,56 @@
         </div> -->
 
         <!-- MainFive -->
-        <div class="top">
-          <h1 class="title-font">05. vchvsdh</h1>
+        <div id="part5" class="top">
+          <h1 class="title-font">05. Ưu Đãi</h1>
         </div>
         <div class="main-five gird gird__row">
           <div class="img--box--obj gird__column">
-            <div class="img--box img--box--girl"></div>
-            <div class="img--box img--box--boy"></div>
-            <div class="img--box img--box--child"></div>
+            <div class="img--box img--box--girl">
+              <div>
+                <img style="width: 10rem" src="/assets/img/embe.png" alt="" />
+              </div>
+              <p
+                class="text"
+                style="text-align: start; margin: 1rem; color: white"
+              >
+                <b>Nội dung bài giảng chi tiết và cập nhật:</b> Chuyên gia giàu
+                kinh nghiệm, với nội dung cập nhật liên tục và công nghệ mới
+                nhất. <br />
+                <b>Phương pháp giảng dạy hiệu quả:</b> Phương pháp giảng dạy
+                tiên tiến như học qua dự án, tương tác thực tế, và học tập dựa
+                trên vấn đề.
+              </p>
+            </div>
+            <div class="img--box img--box--boy">
+              <div>
+                <img style="width: 10rem" src="/assets/img/embe.png" alt="" />
+              </div>
+              <p
+                class="text"
+                style="text-align: start; margin: 1rem; color: white"
+              >
+                <b>Tư vấn 1:1:</b> Hỗ trợ giải đáp thắc mắc và hướng dẫn học tập
+                riêng cho từng học viên. <br />
+                <b>Lộ trình học tập cá nhân hóa:</b> Thiết kế lộ trình học tập
+                phù hợp với mục tiêu và trình độ hiện tại của từng học viên.
+              </p>
+            </div>
+            <div class="img--box img--box--child">
+              <div>
+                <img style="width: 10rem" src="/assets/img/embe.png" alt="" />
+              </div>
+              <p
+                class="text"
+                style="text-align: start; margin: 1rem; color: white"
+              >
+                <b>Bài tập và dự án thực tế:</b> Cung cấp các bài tập thực hành
+                và dự án thực tế giúp học viên áp dụng ngay kiến thức đã học.
+                <br />
+                <b>Cơ hội làm việc nhóm:</b> Tạo điều kiện cho học viên làm việc
+                nhóm, phát triển kỹ năng mềm và học hỏi từ nhau.
+              </p>
+            </div>
           </div>
           <div class="plan">
             <div class="inner">
@@ -433,8 +618,8 @@
       </div>
 
       <!-- MainFour -->
-      <div class="top">
-        <h1 class="title-font">04. Reviews</h1>
+      <div id="part4" class="top">
+        <h1 class="title-font">04. Đánh Giá</h1>
       </div>
       <div class="main-four">
         <div class="gird gird__column">
@@ -442,7 +627,7 @@
             <div class="box box--one">
               <h1 class="students title-font text">
                 What our
-                <span style="color: --color_other"
+                <span style="color: rgb(219, 112, 147)"
                   ><ins class="students title-font">Students</ins></span
                 >
                 say about us
@@ -464,16 +649,20 @@
                   <div class="aqua_img--one"></div>
                   <div class="aqua_label">
                     <p class="aqua_label--label"><b>Trà Anh Thơ</b></p>
-                    <p class="aqua_label--label" style="color: --color_other">
-                      Senior Developer
+                    <p
+                      class="aqua_label--label"
+                      style="color: rgb(219, 112, 147)"
+                    >
+                      Data Analyst
                     </p>
                   </div>
                 </div>
                 <p class="text aqua_label--label">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Assumenda eaque ullam sapiente quos vel. Possimus distinctio
-                  aliquid aut rem nemo aliquam, doloremque unde. Quis eligendi
-                  error ut repellendus cumque non.
+                  Ban đầu mình cũng nghĩ tự học là tốt nhưng chính bản thân đi
+                  xin việc dơ chứng chỉ bên đó NTD nói không yên tâm với chất
+                  lượng. Cũng may là lạc sang MCode mà mình đã thuận lợi qua 4
+                  chứng chỉ. Bản thân mình thấy MCode dạy khá dễ hiểu và hiểu
+                  trước thì mới làm được.
                 </p>
               </div>
             </div>
@@ -482,17 +671,22 @@
                 <div class="aqua gird--center--row">
                   <div class="aqua_img--two"></div>
                   <div class="aqua_label">
-                    <p class="aqua_label--label"><b>mai cồ chết sình</b></p>
-                    <p class="aqua_label--label" style="color: --color_other">
-                      Data Analyst
+                    <p class="aqua_label--label"><b>Đoàn Minh Tâm</b></p>
+                    <p
+                      class="aqua_label--label"
+                      style="color: rgb(219, 112, 147)"
+                    >
+                      Software Engineer
                     </p>
                   </div>
                 </div>
                 <p class="text aqua_label--label">
-                  Magni non obcaecati sit corporis, architecto itaque fugit
-                  voluptatem mollitia eius ratione modi praesentium tempora
-                  pariatur laborum, enim totam repellendus a quia voluptatibus,
-                  officia odio voluptate. Unde, blanditiis? Debitis, possimus?
+                  Hiện tại mình đang là Software Engineer cho Kobiton, và đóng
+                  vai trò là Team Leader trong team. Mình đã làm việc qua nhiều
+                  công ty với nhiều vị trí khác nhau. Điều mình trải nghiệm được
+                  đó là tất cả lý thuyết chỉ mang tính tương đối, khi làm
+                  software chúng ta cần phải hướng đến thực tế hơn là làm những
+                  thứ giống như sách vở.
                 </p>
               </div>
             </div>
@@ -509,31 +703,33 @@
                   ><img class="logo" src="/assets/img/magiccode.png" alt=""
                 /></span>
                 <p class="fontw">
-                  We are not here to sell you <br />
-                  products, we sell value through <br />
-                  our expertise.
+                  Chúng tôi không ở đây để bán cho bạn
+
+                  <br />
+                  sản phẩm, chúng tôi bán giá trị thông qua<br />
+                  chuyên môn của chúng tôi.
                 </p>
                 <div class="footer_icon">
-                  <i class="icon_main fa-brands fa-facebook"></i
-                  ><i class="icon_main fa-brands fa-square-twitter"></i
-                  ><i class="icon_main fa-brands fa-instagram"></i
-                  ><i class="icon_main fa-brands fa-linkedin-in"></i>
+                  <i class="icon_main icon_space fa-brands fa-facebook"></i
+                  ><i
+                    class="icon_main icon_space fa-brands fa-square-twitter"
+                  ></i
+                  ><i class="icon_main icon_space fa-brands fa-instagram"></i
+                  ><i class="icon_main icon_space fa-brands fa-linkedin-in"></i>
                 </div>
               </div>
               <div class="footer_box--1--content"></div>
               <div class="footer_box--1--content">
                 <p class="fontw">
-                  <b>Address:</b> <br />38 opebi Road, Ikeja, Lagos State,
-                  Nigeia.
+                  <b>Địa Chỉ:</b> <br />470 Đường Trần Đại Nghĩa,Hoà Hải, Ngũ
+                  Hành Sơn, Đà Nẵng.
                 </p>
-                <p class="fontw"><b>Phone:</b><br />+2349022396389</p>
-                <p class="fontw">
-                  <b>Email:</b> <br />contact@contentionary.com
-                </p>
+                <p class="fontw"><b>Phone:</b><br />(84+)093472686999</p>
+                <p class="fontw"><b>Email:</b> <br />magiccode@company.com</p>
               </div>
               <div class="footer_box--1--content">
                 <p class="fontw">
-                  <b>Company:</b> <br />About Us <br />Features <br />Pricing
+                  <b>Công Ty:</b> <br />Liên Hệ <br />Tính Năng <br />Giá Cả
                 </p>
 
                 <p></p>
@@ -542,95 +738,175 @@
             <div
               class="footer_box footer_box--2 gird--center gird--center--column"
             >
-              <p>Subscribe to get latest updates</p>
+              <p class="text" style="color: white">
+                Đăng ký để nhận thông tin cập nhật mới nhất.
+              </p>
               <div class="email_button gird gird--center gird--center--row">
                 <input
                   type="text"
                   value=""
-                  placeholder="Your Email address"
-                  style="color: --color_other"
+                  placeholder="Nhập Địa Chỉ Email Của Bạn"
+                  style="color: rgb(219, 112, 147); width: 50%"
                 />
                 <button
                   style="
-                    background-color: --color_other;
+                    background-color: rgb(219, 112, 147);
                     color: --color_white;
                     border: 0;
+                    width: 20%;
                   "
                 >
-                  Subscribe
+                  Đăng Kí
                 </button>
               </div>
             </div>
             <div class="footer_box footer_box--3">
               <p class="fontw">
-                <span style="color: --color_other"> &copy; Contentionnary</span>
-                &nbsp; Powered By Contentionary
+                Được Hỗ Trợ Bởi
+                <span style="color: rgb(219, 112, 147)"> &copy; TraAnhTho</span>
+                &nbsp;
               </p>
             </div>
           </div>
         </div>
       </footer>
     </div>
-
-    <div class="modal">
+    <!-- END -->
+    <div class="modal" id="modal" style="display: none">
       <div class="modal__overlay"></div>
       <div class="modal__body">
         <div class="modal__inner">
           <form class="form">
-            <div class="form__btn_exit"><button class="button--circle">X</button></div>
-    <div class="flex-column">
-      <label>Email </label> </div>
-      <div class="inputForm">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32" height="20"><g data-name="Layer 3" id="Layer_3"><path d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"></path></g></svg>
-        <input placeholder="Enter your Email" class="input" type="text">
-      </div>
-    
-    <div class="flex-column">
-      <label>Password </label></div>
-      <div class="inputForm">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>        
-        <input placeholder="Enter your Password" class="input" type="password">
-      </div>
-    
-    <div class="flex-row">
-      <div>
-      <input type="radio">
-      <label>Remember me </label>
-      </div>
-      <span class="span">Forgot password?</span>
-    </div>
-    <button class="button-submit">Sign In</button>
-    <p class="p">Don't have an account? <span class="span">Sign Up</span>
+            <!-- <div class="form__btn_exit">
+              <button class="button--circle">X</button>
+            </div> -->
+            <div class="flex-column">
+              <label>Email </label>
+            </div>
+            <div class="inputForm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                viewBox="0 0 32 32"
+                height="20"
+              >
+                <g data-name="Layer 3" id="Layer_3">
+                  <path
+                    d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"
+                  ></path>
+                </g>
+              </svg>
+              <input placeholder="Enter your Email" class="input" type="text" />
+            </div>
 
-    </p><p class="p line">Or With</p>
+            <div class="flex-column">
+              <label>Password </label>
+            </div>
+            <div class="inputForm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                viewBox="-64 0 512 512"
+                height="20"
+              >
+                <path
+                  d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"
+                ></path>
+                <path
+                  d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"
+                ></path>
+              </svg>
+              <input
+                placeholder="Enter your Password"
+                class="input"
+                type="password"
+              />
+            </div>
 
-    <div class="flex-row">
-      <button class="btn google">
-        <svg xml:space="preserve" style="enable-background:new 0 0 512 512;" viewBox="0 0 512 512" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="20" version="1.1">
-<path d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+            <div class="flex-row">
+              <div>
+                <input type="radio" />
+                <label>Remember me </label>
+              </div>
+              <span class="span">Forgot password?</span>
+            </div>
+            <button class="button-submit">Sign In</button>
+            <p class="p">
+              Don't have an account? <span class="span">Sign Up</span>
+            </p>
+            <p class="p line">Or With</p>
+
+            <div class="flex-row">
+              <button class="btn google">
+                <svg
+                  xml:space="preserve"
+                  style="enable-background: new 0 0 512 512"
+                  viewBox="0 0 512 512"
+                  y="0px"
+                  x="0px"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Layer_1"
+                  width="20"
+                  version="1.1"
+                >
+                  <path
+                    d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
 	c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
-	C103.821,274.792,107.225,292.797,113.47,309.408z" style="fill:#FBBB00;"></path>
-<path d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+	C103.821,274.792,107.225,292.797,113.47,309.408z"
+                    style="fill: #fbbb00"
+                  ></path>
+                  <path
+                    d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
 	c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
-	c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z" style="fill:#518EF8;"></path>
-<path d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+	c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z"
+                    style="fill: #518ef8"
+                  ></path>
+                  <path
+                    d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
 	c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
-	c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z" style="fill:#28B446;"></path>
-<path d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+	c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"
+                    style="fill: #28b446"
+                  ></path>
+                  <path
+                    d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
 	c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
-	C318.115,0,375.068,22.126,419.404,58.936z" style="fill:#F14336;"></path>
+	C318.115,0,375.068,22.126,419.404,58.936z"
+                    style="fill: #f14336"
+                  ></path>
+                </svg>
 
-</svg>
-   
-        Google 
-        
-      </button><button class="btn apple">
-<svg xml:space="preserve" style="enable-background:new 0 0 22.773 22.773;" viewBox="0 0 22.773 22.773" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" width="20" height="20" version="1.1"> <g> <g> <path d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573 c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"></path> <path d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334 c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0 c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019 c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464 c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648 c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"></path> </g></g></svg>
+                Google</button
+              ><button class="btn apple">
+                <svg
+                  xml:space="preserve"
+                  style="enable-background: new 0 0 22.773 22.773"
+                  viewBox="0 0 22.773 22.773"
+                  y="0px"
+                  x="0px"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  width="20"
+                  height="20"
+                  version="1.1"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573 c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"
+                      ></path>
+                      <path
+                        d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334 c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0 c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019 c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464 c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648 c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
 
-        Apple 
-        
-</button></div></form>
-
+                Apple
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

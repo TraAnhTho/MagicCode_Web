@@ -1,0 +1,92 @@
+#header {
+  display: inline-block;
+  justify-content: center;
+  width: 100%;
+}
+.header__background {
+  position: relative;
+}
+.header__background--main {
+  width: 100%;
+  height: 40rem;
+  opacity: 0.5;
+  image-rendering: pixelated;
+  background: url(/assets/img/nenpink.jpg) no-repeat center/cover;
+  clip-path: path(
+    "M0,250 Q60,10 100,40 T200,180 T300,180 T400,170 T500,130 T600,40 T700,85 T800,30 T900,77 T1000,38 T1100,207 T1200,140 T1300,777 V500 H0 Z"
+  );
+}
+.header__background--root {
+  background-image: url(/assets/img/snapedit_girl.png);
+  image-rendering: pixelated;
+  background-size: 20rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  margin: 9.4rem 5rem 0rem;
+  width: 100%;
+  height: 100%;
+}
+.navbar {
+  width: 100%;
+  height: 10rem;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+.navbar:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+.navbar__item {
+  height: 100%;
+  margin: 0 auto;
+  .header__a__item {
+    color: $color_other;
+  }
+}
+.navbar__item--logo {
+  margin: o auto;
+}
+.header__title {
+  text-align: center;
+  margin: auto 0rem auto 10rem;
+}
+.header__gird {
+  justify-content: space-between;
+}
+.title--span {
+  text-align: center;
+  margin: auto 8rem auto 16rem;
+}
+.item {
+  margin: auto 1.2rem;
+}
+.header__box-img {
+  justify-content: center;
+}
+.logo {
+  width: 10rem;
+}
+
+// .navbar__menu {
+//   @media screen and (max-width: 1280px) {
+//     display: none;
+//   }
+// }
+
+.navbar__hamburger {
+  display: none;
+  // @media screen and (max-width: 1280px) {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
+}

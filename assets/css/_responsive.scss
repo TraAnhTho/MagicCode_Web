@@ -1,0 +1,52 @@
+/* Pc */
+@media (min-width: 1010px) {
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1009px) {
+  .navbar__hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar {
+    position: relative;
+  }
+  .navbar__menu {
+    display: none;
+    // width: 50%;
+    // height: 100%;
+    // background-color: white;
+    // position: absolute;
+    // top: 0rem;
+    // right: 0;
+    // display: block;
+    // text-align: start;
+  }
+  .header__title {
+    margin: 0;
+  }
+  .header__title {
+    p {
+      margin-left: 15rem;
+      margin-right: 0;
+      overflow-wrap: break-word; /* Cú pháp mới */
+    }
+  }
+  .header__background--root {
+    margin-left: 0;
+  }
+  .main-one--vanban,
+  .main-one--circle {
+    margin: 3rem;
+  }
+  .book {
+    width: 20rem;
+    height: 25rem;
+  }
+  .text {
+    font-size: small;
+  }
+}
+/* Mobie */
+@media (max-width: 740px) {
+}
