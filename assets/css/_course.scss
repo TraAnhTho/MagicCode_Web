@@ -44,13 +44,17 @@ ul.sirbar-course__list li {
   top: 50%;
   left: 50%;
 }
-#scroll{
-            width:100%;
-            height:50rem;
-            overflow-x:hidden;
-            overflow-y:auto;
-            padding: 2rem 0;
+#scroll {
+  width: 100%;
+  height: 50rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 2rem 0;
 }
-.text-course--hidden{
+.text-course--hidden {
   display: none;
+}
+
+.text-course--hidden.active {
+  display: block;
 }

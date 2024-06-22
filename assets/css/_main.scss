@@ -262,14 +262,21 @@
 }
 /* ---------------------- */
 .main-five {
-  flex: 0.7 0.3;
+  margin: 3rem auto;
 }
 .img--box {
   margin: 1rem;
   background-image: url(/assets/img/nenpink.jpg);
   height: 10rem;
-  width: 70rem;
+  width: 100%;
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
+}
+
+.img--box--obj {
+  flex-basis: 65%;
+}
+.plan {
+  flex-basis: 35%;
 }

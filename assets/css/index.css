@@ -86,6 +86,7 @@ a {
   color: black;
   text-align: center;
   margin: 2rem auto;
+  overflow-wrap: break-word;
 }
 
 .icon_main {
@@ -117,6 +118,10 @@ a {
 .button:active {
   transform: translate(0.2);
   box-shadow: none;
+}
+
+.div10rem {
+  height: 10rem;
 }
 
 #header {
@@ -185,7 +190,7 @@ a {
 
 .header__title {
   text-align: center;
-  margin: auto 0rem auto 10rem;
+  margin: auto 5rem auto 10rem;
 }
 
 .header__gird {
@@ -211,6 +216,12 @@ a {
 
 .navbar__hamburger {
   display: none;
+}
+
+.navbar__menu.active {
+  display: block;
+  flex-direction: row; /* Hiển thị các mục menu ngang khi có class active */
+  justify-content: flex-end;
 }
 
 .courses-item {
@@ -277,6 +288,7 @@ img.star-people {
 
 .box {
   flex: 1;
+  width: 30%;
   margin: 1rem;
   text-align: left;
 }
@@ -316,6 +328,7 @@ img.star-people {
 .aqua_label--label {
   margin: 0 1rem;
   text-align: left;
+  font-size: 1.5rem;
 }
 
 .aqua_img--one {
@@ -607,17 +620,25 @@ img.star-people {
 
 /* ---------------------- */
 .main-five {
-  flex: 0.7 0.3;
+  margin: 3rem auto;
 }
 
 .img--box {
   margin: 1rem;
   background-image: url(/assets/img/nenpink.jpg);
   height: 10rem;
-  width: 70rem;
+  width: 100%;
   border-radius: 1rem;
   display: flex;
   flex-direction: row;
+}
+
+.img--box--obj {
+  flex-basis: 65%;
+}
+
+.plan {
+  flex-basis: 35%;
 }
 
 /* PHẦN FOOTER */
@@ -878,6 +899,10 @@ ul.sirbar-course__list li {
   display: none;
 }
 
+.text-course--hidden.active {
+  display: block;
+}
+
 /* PHẦN MAIN-CONTAIN */
 .gird--center {
   display: flex;
@@ -1090,7 +1115,7 @@ div.test {
 /* ----------------------------------------------------------------------------------------------- */
 /* PHẦN MAIN-FIVE */
 .main-five {
-  margin: 3rem 1.5rem;
+  margin: 3rem auto;
 }
 
 .main-five_content {
@@ -1291,9 +1316,47 @@ div.button--six {
 }
 
 /* -------------------------------------------------------- */
+.courses-button__circle {
+  width: 10rem;
+  height: 10rem;
+  border: 0.2rem solid rgb(219, 112, 147);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.courses-button {
+  text-align: center;
+  box-shadow: white 0px 0px 0px 0px;
+  margin: auto 0;
+}
+
+.courses-button--threemain {
+  display: none;
+}
+
 /* Pc */
+@media (max-width: 1025px) {
+  .navbar__item {
+    margin-left: -1rem;
+  }
+  .footer_box--1--content {
+    margin-left: 2rem;
+  }
+  .footer_box--1 {
+    justify-content: flex-start;
+  }
+  .main-five {
+    flex-wrap: nowrap;
+  }
+  .img-girl--four {
+    left: -2rem;
+  }
+  .aqua_label--label {
+    font-size: 1.3rem;
+  }
+}
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1009px) {
+@media (min-width: 0px) and (max-width: 1009px) {
   .navbar__hamburger {
     display: flex;
     align-items: center;
@@ -1301,9 +1364,6 @@ div.button--six {
   }
   .navbar {
     position: relative;
-  }
-  .navbar__menu {
-    display: none;
   }
   .header__title {
     margin: 0;
@@ -1325,23 +1385,154 @@ div.button--six {
     height: 25rem;
   }
   .text {
-    font-size: small;
+    font-size: x-small;
+  }
+  .footer_box--1,
+  .footer_box--2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .footer_box {
+    width: 100vh;
+  }
+  .img--box--boy,
+  .img--box--child,
+  .img--box--girl {
+    width: 100%;
+    height: auto;
+    font-size: x-small;
+  }
+  .img--box--obj {
+    flex-basis: 55%;
+  }
+  .plan {
+    flex-basis: 40%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1009px) {
+  .navbar__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  .navbar__menu.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navbar__menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar__menu ul li {
+    margin-right: 20px;
+  }
+  .navbar__menu ul li:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 860px) {
+  .aqua_label--label {
+    font-size: 1rem;
+  }
+  .course,
+  .courses-button--threemain,
+  .flex-row {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header__title p {
+    margin-left: 20rem;
+    margin-right: 2rem;
+  }
+  .courses-item {
+    font-size: x-small;
+    width: 30%;
+  }
+  .box_moves--4 {
+    top: 8.5rem;
+    right: -30rem;
+  }
+  .div10rem {
+    display: none;
+  }
+  .box {
+    width: 45%;
+  }
+  .content--four {
+    flex-wrap: nowrap;
   }
 }
 /* Mobie */
-.courses-button__circle {
-  width: 10rem;
-  height: 10rem;
-  border: 0.2rem solid rgb(219, 112, 147);
-  border-radius: 50%;
-  text-align: center;
+@media (max-width: 740px) {
+  .courses-button {
+    display: none;
+  }
+  .title-font {
+    font-size: 3rem;
+  }
+  .course,
+  .main-three--courses,
+  .main-two--boxtext {
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .boxtext {
+    margin: 0 1rem;
+  }
+  .courses-item {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  html {
+    /* 1rem=10px */
+    font-size: 42.5%;
+  }
 }
-
-.courses-button {
-  text-align: center;
-  box-shadow: white 0px 0px 0px 0px;
+@media (max-width: 440px) {
+  .div10rem {
+    display: block;
+  }
+  .navbar__menu.active {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navbar__menu {
+    position: absolute;
+    top: 200%;
+    left: 0;
+    display: none;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  .header__icon .icon--code {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  .main-five {
+    flex-direction: column;
+  }
+  .footer_box--2 {
+    justify-content: left;
+  }
+  .main-one--vanban,
+  .main-one--circle {
+    width: 100vh;
+    height: 30vh;
+  }
 }
-
 .icon_button {
   font-size: 5rem;
   text-align: center;

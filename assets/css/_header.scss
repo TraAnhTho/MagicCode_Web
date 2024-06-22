@@ -57,7 +57,7 @@
 }
 .header__title {
   text-align: center;
-  margin: auto 0rem auto 10rem;
+  margin: auto 5rem auto 10rem;
 }
 .header__gird {
   justify-content: space-between;
@@ -82,6 +82,7 @@
 //   }
 // }
 
+
 .navbar__hamburger {
   display: none;
   // @media screen and (max-width: 1280px) {
@@ -89,4 +90,10 @@
   //   align-items: center;
   //   justify-content: center;
   // }
+}
+
+.navbar__menu.active {
+  display: block; 
+  flex-direction: row; /* Hiển thị các mục menu ngang khi có class active */
+  justify-content: flex-end;
 }

@@ -125,3 +125,32 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.navbar__hamburger');
+  const menu = document.querySelector('.navbar__menu');
+
+  hamburger.addEventListener('click', function() {
+      menu.classList.toggle('active');
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const rootItems = document.querySelectorAll('.text-course--root');
+
+  rootItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+          let nextSibling = item.nextElementSibling;
+          while (nextSibling && !nextSibling.classList.contains('text-course--root')) {
+              if (nextSibling.classList.contains('text-course--hidden')) {
+                  nextSibling.classList.toggle('active');
+              }
+              nextSibling = nextSibling.nextElementSibling;
+          }
+      });
+  });
+});
