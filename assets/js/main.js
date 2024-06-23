@@ -154,3 +154,22 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Show modal on icon click
+  document.querySelector('.icon_button').addEventListener('click', function() {
+      document.getElementById('modal--blog').style.display = 'block';
+  });
+
+  // Hide modal on overlay click
+  document.addEventListener('click', function(event) {
+      const modal = document.getElementById('modal--blog');
+      const modalInner = document.querySelector('.modal__inner--blog');
+
+      if (modal.style.display === 'block' && !modalInner.contains(event.target) && !event.target.closest('.icon_button')) {
+          modal.style.display = 'none';
+      }
+  });
+});

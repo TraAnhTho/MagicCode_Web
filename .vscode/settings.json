@@ -6,7 +6,7 @@
         "enableSsl": "Disabled"
       },
       "previewLimit": 50,
-      "server": "localhost",
+      "server": "127.0.0.1:5500",
       "port": 3306,
       "driver": "MariaDB",
       "name": "MyMySQLConnection",

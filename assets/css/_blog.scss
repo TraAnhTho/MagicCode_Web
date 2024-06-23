@@ -2,7 +2,7 @@
   position: relative;
   background-color: #30344c;
   padding: 1em;
-  z-index: 5;
+  z-index: 1;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 60%;
@@ -11,7 +11,7 @@
 }
 
 .username {
-  color: #c6e1ed;
+  color: #c0e4f4;
   font-size: 0.85em;
   font-weight: 600;
 }
@@ -24,7 +24,7 @@
 .body .tex {
   margin: 0 10px 0 0;
   white-space: pre-line;
-  color: #c0c3d7;
+  color: #e1e5ff;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 4px;
@@ -33,7 +33,7 @@
 .foot {
   position: relative;
   width: 100%;
-  color: #9fa4aa;
+  color: #cad3df;
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -75,3 +75,100 @@
 .viewer span img {
   stroke: #fff;
 }
+.add__blog {
+    border-radius: 50%;
+    border: 2px solid #000; /* Replace with $color_other if using a preprocessor */
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 10;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .modal--blog {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 100; /* Ensure it is above other elements */
+  }
+  
+  .modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Overlay effect */
+  }
+  
+  .modal__body--blog {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Max width of the modal */
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+  }
+  
+  .form--blog {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .form--blog .title--blog {
+    color: royalblue;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .form--blog input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .form--blog textarea {
+    border-radius: 8px;
+    height: 12rem;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  .form--blog button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+  }

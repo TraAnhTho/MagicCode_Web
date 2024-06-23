@@ -693,7 +693,8 @@ img.star-people {
   border-radius: 0.8rem;
 }
 
-.modal {
+.modal,
+.modal--blog {
   position: fixed;
   bottom: 0;
   top: 0;
@@ -710,14 +711,18 @@ img.star-people {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal__body {
+.modal__body,
+.modal__body--blog {
+  display: flex;
   width: 40%;
   margin: auto;
   background-color: white;
   position: relative;
-  z-index: 3;
+  z-index: 10;
   border-radius: 1rem;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
@@ -1192,25 +1197,25 @@ div.test {
 }
 
 .img-five--1 {
-  background-image: url(https://s3-alpha-sig.figma.com/img/0f49/c28d/8df167acdc031b26c2e41688d52d1cbd?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UGlJ7XdJy4idD32USpDU0gs5FGc2nqaoX~30EM3noeCz0k7Za-JnvgKAx2RWG4tYFhQ18qj7gCJr2eRQ0YOPAgryGRKUzJVE29oaYYpAE3gwdCHcbhDCUKAJocSqrvvT0pPi7DtikPmmfMZNhPSzrzCFHOZWF~VqjMkNgASeJZJaQLr5SQ0C-AoDhakahp5EU45xPvtKkEJf5G-w0hwR-jGn~GgdwyUlAT40JYX80sZzuHFrKO1Anu7MgL~RsCr6CVCvVV9Z9pBkszJdKm2ihuJOdDffKhkGsS2wCZSw2kFaQf1I95yBaVNpS1oF3~WjHczW7Tw31kyoJkMU9dkIKg__);
+  background-image: url(/assets/img/NetBeans.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .img-five--2 {
-  background-image: url(https://s3-alpha-sig.figma.com/img/efb1/2bba/5c8115fd4238c63431d0f905fd507f67?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W-9usRfu5461xrToOw5~NyXWOvBaRFRb0vp3ZmANVTX7IfuXOKn4Y0I-E6CGwYtf549vK3JXOoWaTDDkSgcXfzzC4eG9~8~0MO81BHZuCa1GZkjlmJWY9EWWCAJyKtekZL2bi0eoqLl4yAqfzbd3-U4-A19LQ9wl5nCtCRyqCexTPSJoJyOnGgkQQD4lWPpqI8CfrbUzX0EpTf-VyfTniuIrcQ6g9DHIB58FsfpF9dwXX5ot7bxmF4EIoE5vhM~MySZEjyn7Sf0UxIUs31J0gBMpfzn2PkTQNy7bRDHsBISswk1u1K~g3vflLXX2~Fv9dHCegEVdJgRdIc0jPBORbw__);
+  background-image: url(/assets/img/Visual.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .img-five--3 {
-  background-image: url(https://s3-alpha-sig.figma.com/img/e5dc/3855/0a261aff3048e051a17afcb6f098eece?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KoQu-JS9XAhjZBHOhw1yxCkQTVvvVX4HlVeOX5Rwfl9AmZrNHxRldPCeczeaMyZ7RBc41PVUA6N0WZr573rZRV3GiIc57JXjqmpVLbBP2mRBH3YuiJmG-GbaW1oK23OvbkZQJu8WyilSr5HNMADQZiJCNc~b-c2AM~hkVj9VLae7jYG-bolOJ8h4pv8XTj5S8gDO0Lbhd2Et5MbCBWhytPnZFhQmvKHzSP2i8nYghCrcQtAqLTjj01AZIYrXpaSGM5AZmO5h1ZvnCaY0e2Soc96fGgT9JcXVdEiRX9eeziOJ-JY-hWClFx2JEDzMnn4SaKcpTUpxpRFZ8gE-XshCiA__);
+  background-image: url(/assets/img/IntelliJ.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .img-five--4 {
-  background-image: url(https://s3-alpha-sig.figma.com/img/af26/7151/7f27ca6b76bb3ce0eea9445af71ef82d?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=L5g-8AkA7kPFZ-gS~73zStDomGqv9MGdxUFu5Kgz5whpM7h0I7jyhXp9wKFIZEnBvtJAHG7bYBXEXU02E--GcgXJksu7-Gkdii9Ijn5WYn9BK7RQBC2atPLK0xI~MDJvpso-GMMq8KRZCbQsCNtCf6MdvZ9-3Yps7bIYPkkutacIeWOEUX9729hywNB~aecYZFsBcQat-LDMfwBko3kJOX-S~P1E7cfq5P0wZbOxVHKsCRwAaJGR4Qu~1VNiZqqbY2Iw2JgCJdb6vJx3EWWflGsON3BBZKBMvDN27uPFdBHhphE50qAeZjrGoprb0GMZQiIlrY6i8P4bBXKgAbgT~A__);
+  background-image: url(/assets/img/UI.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1324,7 +1329,7 @@ div.button--six {
   position: relative;
   background-color: #30344c;
   padding: 1em;
-  z-index: 5;
+  z-index: 1;
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   max-width: 60%;
@@ -1333,7 +1338,7 @@ div.button--six {
 }
 
 .username {
-  color: #c6e1ed;
+  color: #c0e4f4;
   font-size: 0.85em;
   font-weight: 600;
 }
@@ -1346,7 +1351,7 @@ div.button--six {
 .body .tex {
   margin: 0 10px 0 0;
   white-space: pre-line;
-  color: #c0c3d7;
+  color: #e1e5ff;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 4px;
@@ -1355,7 +1360,7 @@ div.button--six {
 .foot {
   position: relative;
   width: 100%;
-  color: #9fa4aa;
+  color: #cad3df;
   font-size: 12px;
   display: flex;
   align-items: center;
@@ -1396,6 +1401,104 @@ div.button--six {
 
 .viewer span img {
   stroke: #fff;
+}
+
+.add__blog {
+  border-radius: 50%;
+  border: 2px solid #000; /* Replace with $color_other if using a preprocessor */
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 10;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+.modal--blog {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  z-index: 100; /* Ensure it is above other elements */
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Overlay effect */
+}
+
+.modal__body--blog {
+  position: relative;
+  background-color: #fefefe;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 600px; /* Max width of the modal */
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form--blog {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form--blog .title--blog {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.form--blog input {
+  outline: 0;
+  border: 1px solid rgb(219, 213, 213);
+  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.form--blog textarea {
+  border-radius: 8px;
+  height: 12rem;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  border: 1px solid rgb(219, 213, 213);
+}
+
+.form--blog button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: royalblue;
+  color: #fff;
+  cursor: pointer;
 }
 
 .courses-button__circle {
@@ -1523,6 +1626,9 @@ div.button--six {
   }
 }
 @media screen and (max-width: 860px) {
+  .content-five {
+    margin-right: 1.5rem;
+  }
   .card {
     max-width: 80%;
   }
@@ -1644,6 +1750,9 @@ div.button--six {
     height: min-content;
     font-size: 1.5rem;
   }
+  .main-six_background {
+    height: 180rem;
+  }
 }
 @media screen and (max-width: 620px) {
   .footer_box,
@@ -1653,8 +1762,14 @@ div.button--six {
   .under-header--border {
     line-height: 20.5px;
   }
+  .box {
+    min-width: 45%;
+  }
 }
 @media screen and (max-width: 440px) {
+  .box {
+    min-width: 55%;
+  }
   .courses-item {
     min-width: 88%;
   }

@@ -779,14 +779,14 @@
       <div class="modal__overlay"></div>
       <div class="modal__body">
         <div class="modal__inner">
-          <form class="form">
+          <form id="form-reg" class="form" action="reg.php" method="post">
             <!-- <div class="form__btn_exit">
               <button class="button--circle">X</button>
             </div> -->
             <div class="flex-column">
               <label>Email </label>
             </div>
-            <div class="inputForm">
+            <div class="inputForm" name="email" id="email">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -799,13 +799,13 @@
                   ></path>
                 </g>
               </svg>
-              <input placeholder="Enter your Email" class="input" type="text" />
+              <input placeholder="Nhập Email" class="input" type="text" />
             </div>
 
             <div class="flex-column">
-              <label>Password </label>
+              <label>Mật Khẩu </label>
             </div>
-            <div class="inputForm">
+            <div class="inputForm" >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -820,24 +820,25 @@
                 ></path>
               </svg>
               <input
-                placeholder="Enter your Password"
+                placeholder="Nhập Mật Khẩu"
                 class="input"
                 type="password"
+                name="password" id="password"
               />
             </div>
 
             <div class="flex-row">
               <div>
                 <input type="radio" />
-                <label>Remember me </label>
+                <label>Ghi nhớ lần sau </label>
               </div>
-              <span class="span">Forgot password?</span>
+              <span class="span">Quên mật khẩu?</span>
             </div>
-            <button class="button-submit">Sign In</button>
+            <button type="submit" class="button-submit " name="reg-btn" value="Đăng Kí">Đăng Kí</button>
             <p class="p">
-              Don't have an account? <span class="span">Sign Up</span>
+              Bạn đã có tài khoản? <span class="span">Đăng Nhập</span>
             </p>
-            <p class="p line">Or With</p>
+            <p class="p line">Hoặc</p>
 
             <div class="flex-row">
               <button class="btn google">

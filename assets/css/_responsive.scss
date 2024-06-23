@@ -117,6 +117,9 @@
 }
 ///
 @media screen and (max-width: 860px) {
+  
+.content-five {
+  margin-right: 1.5rem}
   .card {
     max-width: 80%;
   }
@@ -242,6 +245,9 @@
     height: min-content;
     font-size: 1.5rem;
   }
+  .main-six_background {
+    height: 180rem;
+  }
 }
 @media screen and (max-width: 620px) {
   .footer_box,
@@ -251,8 +257,14 @@
   .under-header--border {
     line-height: 20.5px;
   }
+  .box {
+    min-width: 45%;
+  }
 }
 @media screen and (max-width: 440px) {
+  .box {
+    min-width: 55%;
+  }
   .courses-item {
     min-width: 88%;
   }
