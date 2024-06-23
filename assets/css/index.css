@@ -1046,6 +1046,10 @@ button.down {
   text-align: center;
 }
 
+.course-item button {
+  display: none;
+}
+
 /* ----------------------------------------------------------------------------------------------- */
 /* PHẦN MAIN-FOUR */
 .main-four {
@@ -1316,6 +1320,84 @@ div.button--six {
 }
 
 /* -------------------------------------------------------- */
+.card {
+  position: relative;
+  background-color: #30344c;
+  padding: 1em;
+  z-index: 5;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  max-width: 60%;
+  transition: 200ms ease-in-out;
+  margin: 2rem auto;
+}
+
+.username {
+  color: #c6e1ed;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.body .tex {
+  margin: 0 10px 0 0;
+  white-space: pre-line;
+  color: #c0c3d7;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.foot {
+  position: relative;
+  width: 100%;
+  color: #9fa4aa;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  margin-top: 10px;
+}
+
+.foot div {
+  margin-right: 1rem;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.foot img {
+  margin-right: 5px;
+  height: 100%;
+  stroke: #9fa4aa;
+}
+
+.viewer span {
+  height: 20px;
+  width: 20px;
+  background-color: rgb(28, 117, 219);
+  margin-right: -6px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 8px;
+  color: #fff;
+  padding: 2px;
+}
+
+.viewer span img {
+  stroke: #fff;
+}
+
 .courses-button__circle {
   width: 10rem;
   height: 10rem;
@@ -1441,6 +1523,9 @@ div.button--six {
   }
 }
 @media screen and (max-width: 860px) {
+  .card {
+    max-width: 80%;
+  }
   .aqua_label--label {
     font-size: 1rem;
   }
@@ -1454,9 +1539,15 @@ div.button--six {
     margin-left: 20rem;
     margin-right: 2rem;
   }
-  .courses-item {
+  .courses-item,
+  .course-item {
     font-size: x-small;
-    width: 30%;
+    width: 40%;
+  }
+  .course-item {
+    min-width: 45%;
+    font-size: x-small;
+    font-family: "Times New Roman", Times, serif;
   }
   .box_moves--4 {
     top: 8.5rem;
@@ -1465,15 +1556,53 @@ div.button--six {
   .div10rem {
     display: none;
   }
-  .box {
-    width: 45%;
-  }
   .content--four {
     flex-wrap: nowrap;
   }
+  .moves {
+    display: none;
+  }
+  .main-five_content {
+    width: 100vh;
+    height: 235px;
+    margin: 0px;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .boxtext {
+    width: 30%;
+  }
+  .courses-item button {
+    display: none;
+  }
+  .course-item button {
+    display: block;
+  }
+  .main-six_gird {
+    flex-direction: row;
+  }
+  .main-six_background {
+    height: 110rem;
+  }
+  .img-boy--six {
+    width: 55%;
+    height: 66%;
+    top: 2rem;
+    left: 12rem;
+  }
 }
 /* Mobie */
-@media (max-width: 740px) {
+@media screen and (max-width: 740px) {
+  .aqua_label--label {
+    font-size: 1.2rem;
+  }
+  .content--four {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .box {
+    min-width: 35%;
+  }
   .courses-button {
     display: none;
   }
@@ -1487,19 +1616,51 @@ div.button--six {
     overflow-y: hidden;
     overflow-x: auto;
   }
-  .boxtext {
-    margin: 0 1rem;
+  .main-two--boxtext {
+    height: 100%;
   }
-  .courses-item {
-    width: 50%;
-    font-size: 1.5rem;
+  .boxtext {
+    margin: 1rem;
+    width: 40%;
   }
   html {
     /* 1rem=10px */
     font-size: 42.5%;
   }
+  .footer_box {
+    width: 85vh;
+  }
+  .under-header--border {
+    padding: 1rem 0 0 0;
+    line-height: 15.5px;
+  }
+  .courses-item {
+    min-width: 45%;
+    font-size: 1.5rem;
+  }
+  .course-item {
+    min-width: 30%;
+    height: -moz-min-content;
+    height: min-content;
+    font-size: 1.5rem;
+  }
 }
-@media (max-width: 440px) {
+@media screen and (max-width: 620px) {
+  .footer_box,
+  .footer_box--2 {
+    width: 70vh;
+  }
+  .under-header--border {
+    line-height: 20.5px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .courses-item {
+    min-width: 88%;
+  }
+  .footer_box {
+    width: 30vh;
+  }
   .div10rem {
     display: block;
   }
@@ -1526,11 +1687,15 @@ div.button--six {
   }
   .footer_box--2 {
     justify-content: left;
+    width: 35vh;
   }
   .main-one--vanban,
   .main-one--circle {
     width: 100vh;
     height: 30vh;
+  }
+  .email_button {
+    width: 40vh;
   }
 }
 .icon_button {
