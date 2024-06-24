@@ -1816,4 +1816,12 @@ div.button--six {
 .icon_button {
   font-size: 5rem;
   text-align: center;
+}
+
+.navbar li a:hover {
+  color: black;
+  opacity: 1;
+  margin-top: 6px;
+  visibility: visible;
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
