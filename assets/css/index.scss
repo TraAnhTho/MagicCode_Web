@@ -24,4 +24,12 @@
   margin-top: 6px;
   visibility: visible;
   text-decoration: underline;
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+.course-td-item:hover {
+  color: $color_other;
+  cursor: pointer;
 }
