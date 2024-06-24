@@ -1834,4 +1834,8 @@ html {
 .course-td-item:hover {
   color: rgb(219, 112, 147);
   cursor: pointer;
+}
+
+.button-reg {
+  font-family: "Pacifico", cursive;
 }/*# sourceMappingURL=index.css.map */
